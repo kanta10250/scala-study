@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Downloaded local tool
+/02-environment-setup/cs
+
+# Scala / sbt generated files
+**/target/
+**/.bsp/
+**/.bloop/
+**/.metals/
