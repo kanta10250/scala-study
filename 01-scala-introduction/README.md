@@ -1,11 +1,11 @@
 # Scala Init
 
-`scalainit` 配下のファイルは、内容ごとに次のように整理している。
+`01-scala-introduction` 配下のファイルは、内容ごとに次のように整理している。
 
 ## フォルダ構成
 
 ```text
-scalainit/
+01-scala-introduction/
 ├── 01-introduction/
 │   └── scala-overview-and-jvm.md
 ├── 02-environment-setup/
