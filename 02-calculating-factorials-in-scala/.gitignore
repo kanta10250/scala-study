@@ -1,0 +1,6 @@
+# sbt / Scala generated files
+**/target/
+**/.bsp/
+
+# local tools and editor files
+.DS_Store
