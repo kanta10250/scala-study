@@ -23,6 +23,12 @@
 │       └── build.properties
 ├── 05-numeric-types-and-arithmetic/
 │   └── numeric-types-and-arithmetic.md
+├── 06-factorial-calculator/
+│   ├── FactorialCalculator.scala
+│   ├── build.sbt
+│   ├── factorial-calculator.md
+│   └── project/
+│       └── build.properties
 └── README.md
 ```
 
@@ -39,6 +45,8 @@
 - 距離を計算する Scala プログラムの作成方法
 - Scala の数値型と算術演算の基本
 - 整数の割り算と浮動小数点数の誤差の違い
+- 再帰を使って階乗を計算する方法
+- `BigInt` を使って大きな整数を扱う方法
 
 ## ファイル一覧
 
@@ -62,6 +70,14 @@
   距離を計算するプログラムの実装内容を説明する資料
 - [numeric-types-and-arithmetic.md](./05-numeric-types-and-arithmetic/numeric-types-and-arithmetic.md)
   Scala の数値型、型変換、算術演算、浮動小数点数の誤差をまとめた資料
+- [FactorialCalculator.scala](./06-factorial-calculator/FactorialCalculator.scala)
+  `BigInt` と再帰を使って階乗を計算する Scala のサンプルプログラム
+- [build.sbt](./06-factorial-calculator/build.sbt)
+  `06` の Scala バージョンを指定する sbt の設定ファイル
+- [project/build.properties](./06-factorial-calculator/project/build.properties)
+  `06` の sbt バージョンを指定する設定ファイル
+- [factorial-calculator.md](./06-factorial-calculator/factorial-calculator.md)
+  階乗プログラムの実装内容と再帰の考え方を説明する資料
 
 ## 進め方
 
@@ -71,7 +87,8 @@
 4. `03-running-in-the-sbt-shell` の資料を読み、`sbt` の常駐モードで `run` やログ確認を試す
 5. `04-distance-calculator` で別の sbt プロジェクトとして距離計算プログラムを動かす
 6. `05-numeric-types-and-arithmetic` の資料を読み、数値型と計算結果の違いを確認する
+7. `06-factorial-calculator` の資料を読み、`BigInt` と再帰で階乗を求める方法を確認する
 
 ## 最後
 
-このディレクトリでは、Scala のプログラムをファイルとして扱う最初の流れを学べる。REPL だけでなく、ソースファイルと `sbt` を使った実行方法、別題材を独立した sbt プロジェクトとして分ける考え方、さらに数値型や算術演算の基礎まで確認できる。
+このディレクトリでは、Scala のプログラムをファイルとして扱う最初の流れを学べる。REPL だけでなく、ソースファイルと `sbt` を使った実行方法、別題材を独立した sbt プロジェクトとして分ける考え方、数値型や算術演算の基礎、さらに `BigInt` と再帰を使った階乗計算までまとめて確認できる。
