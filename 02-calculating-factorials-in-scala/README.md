@@ -15,10 +15,12 @@
 │   └── understanding-a-scala-application.md
 ├── 03-running-in-the-sbt-shell/
 │   └── running-in-the-sbt-shell.md
-├── 04-Implementation of a program to calculate distance/
-│   ├── Distance.scala
+├── 04-distance-calculator/
+│   ├── DistanceCalculator.scala
 │   ├── build.sbt
-│   └── Implementation of a program to calculate distance.md
+│   ├── distance-calculator.md
+│   └── project/
+│       └── build.properties
 └── README.md
 ```
 
@@ -46,11 +48,13 @@
   `Main.scala` の内容を読みながら、Scala の基本構文を解説する資料
 - [running-in-the-sbt-shell.md](./03-running-in-the-sbt-shell/running-in-the-sbt-shell.md)
   `sbt` を起動したまま `run` や `lastGrep` を使う方法を説明する資料
-- [Distance.scala](./04-Implementation%20of%20a%20program%20to%20calculate%20distance/Distance.scala)
+- [DistanceCalculator.scala](./04-distance-calculator/DistanceCalculator.scala)
   距離を計算する Scala のサンプルプログラム
-- [build.sbt](./04-Implementation%20of%20a%20program%20to%20calculate%20distance/build.sbt)
+- [build.sbt](./04-distance-calculator/build.sbt)
   `04` の Scala バージョンを指定する sbt の設定ファイル
-- [Implementation of a program to calculate distance.md](./04-Implementation%20of%20a%20program%20to%20calculate%20distance/Implementation%20of%20a%20program%20to%20calculate%20distance.md)
+- [project/build.properties](./04-distance-calculator/project/build.properties)
+  `04` の sbt バージョンを指定する設定ファイル
+- [distance-calculator.md](./04-distance-calculator/distance-calculator.md)
   距離を計算するプログラムの実装内容を説明する資料
 
 ## 進め方
@@ -59,8 +63,8 @@
 2. `sbt run` を実行して、`Hello World` が表示されることを確認する
 3. `02-understanding-a-scala-application` の資料を読み、ソースコードの意味を理解する
 4. `03-running-in-the-sbt-shell` の資料を読み、`sbt` の常駐モードで `run` やログ確認を試す
-5. `04-Implementation of a program to calculate distance` で別の sbt プロジェクトとして距離計算プログラムを動かす
+5. `04-distance-calculator` で別の sbt プロジェクトとして距離計算プログラムを動かす
 
 ## 最後
 
-このディレクトリでは、Scala のプログラムをファイルとして扱う最初の流れを学べる。REPL だけでなく、ソースファイルと `sbt` を使ってプログラムを実行し、さらに別の題材を独立した sbt プロジェクトとして分けて扱う基本的な方法まで確認できる。
+このディレクトリでは、Scala のプログラムをファイルとして扱う最初の流れを学べる。REPL だけでなく、ソースファイルと `sbt` を使った実行方法、別題材を独立した sbt プロジェクトとして分ける考え方まで確認できる。
