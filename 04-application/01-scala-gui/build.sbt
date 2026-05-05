@@ -23,3 +23,15 @@ libraryDependencies += "org.openjfx" % "javafx-controls" % "21.0.1" classifier j
 libraryDependencies += "org.openjfx" % "javafx-fxml" % "21.0.1" classifier javafxPlatform.value
 libraryDependencies += "org.openjfx" % "javafx-graphics" % "21.0.1" classifier javafxPlatform.value
 libraryDependencies += "org.openjfx" % "javafx-web" % "21.0.1" classifier javafxPlatform.value
+
+ThisBuild / assemblyMergeStrategy := {
+  case PathList(ps @ _*) if ps.last endsWith ".json" => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".dylib" => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".bss" => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".class" => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last == "resourcebundles" => MergeStrategy.first
+  case "javafx-swt.jar" => MergeStrategy.first
+  case x =>
+    val oldStrategy = (ThisBuild / assemblyMergeStrategy).value
+    oldStrategy(x)
+}
