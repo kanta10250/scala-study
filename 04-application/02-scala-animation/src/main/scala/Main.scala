@@ -19,7 +19,8 @@ class Main extends Application:
     primaryStage.setScene(scene)
 
     val circles = Group()
-    for i <- 1 to 30 do
+    val circleNum = getParameters().getNamed.getOrDefault("num", "30").toInt
+    for i <- 1 to circleNum do
       val circle = Circle(150, Color.web("white", 0.05))
       circle.setStrokeType(StrokeType.OUTSIDE)
       circle.setStroke(Color.web("white", 0.16))
