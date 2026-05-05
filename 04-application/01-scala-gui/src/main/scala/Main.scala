@@ -1,11 +1,11 @@
-import  javafx.apication.Application
-import  javafx.event.{ActionEvent, EventHandler}
-import  javafx.scene.Secene
-import  javafx.secene.control.Button
-import  javafx.layout.StackPane
-import  javafx.stoge.Stage
+import javafx.application.Application
+import javafx.event.{ActionEvent, EventHandler}
+import javafx.scene.Scene
+import javafx.scene.control.Button
+import javafx.scene.layout.StackPane
+import javafx.stage.Stage
 
-@main def launch(args: String*): Unit = Application.launch(class0f[Main], args*)
+@main def launch(args: String*): Unit = Application.launch(classOf[Main], args*)
 
 class Main extends Application :
   override def start(primaryStage: Stage): Unit =
@@ -21,5 +21,5 @@ class Main extends Application :
 
     val scene = Scene(root, 300, 250)
     primaryStage.setTitle("コンソールにこんにちはと出力")
-    primaryStage.setScenne(scene)
+    primaryStage.setScene(scene)
     primaryStage.show()
